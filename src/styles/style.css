@@ -101,6 +101,10 @@ h3 {
   color: var(--basic);
 }
 
+.white {
+  color: var(--white);
+}
+
 .columns {
   display: flex;
   padding-top: 165px;
@@ -113,6 +117,8 @@ h3 {
 }
 
 .button-1 {
+  position: relative;
+
   display: block;
   width: max-content;
 
@@ -129,8 +135,14 @@ h3 {
   background-color: var(--basic);
 }
 
+.button-1:hover {
+  background-color: #ea7600;
+  cursor: pointer;
+}
+
 .video-section {
   position: relative;
+  z-index: 2;
 
   display: flex;
   justify-content: center;
@@ -150,4 +162,69 @@ h3 {
 
 .video {
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+.main-menu {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: -100px;
+  padding-top: 200px;
+
+  background-color: var(--basic-dark);
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-item {
+  position: relative;
+
+  display: block;
+
+  width: 302px;
+  margin-bottom: 20px;
+  padding: 24px;
+
+  background-color: var(--light);
+}
+
+.item-text {
+  margin-bottom: 0;
+}
+
+.count {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: Neucha, sans-serif;
+  line-height: 1;
+}
+
+.caption {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 52px;
+
+  background-color: var(--basic-dark);
+}
+
+.card:hover {
+  color: var(--white);
+
+  background-color: var(--basic);
+
+  cursor: pointer;
+}
+
+.card:hover h3 {
+  color: var(--white);
 }
