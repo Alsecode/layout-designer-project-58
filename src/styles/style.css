@@ -11,13 +11,143 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
   font-weight: normal;
-  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Neucha';
   font-weight: normal;
-  src: url(../fonts/Neucha-Regular.ttf);
+  font-family: Neucha;
+  src: url("../fonts/Neucha-Regular.ttf");
+}
+
+body {
+  margin: 0;
+
+  color: var(--dark);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  font-weight: 400;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.w-1110 {
+  max-width: 1110px;
+}
+
+.header-section {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.header-section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--brown);
+
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.headline {
+  position: relative;
+
+  padding-top: 100px;
+}
+
+.main-picture {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+
+  height: 525px;
+}
+
+.orange {
+  color: var(--basic);
+}
+
+.columns {
+  display: flex;
+  padding-top: 165px;
+
+  column-gap: 30px;
+}
+
+.columns > * {
+  flex: 1;
+}
+
+.button-1 {
+  display: block;
+  width: max-content;
+
+  margin-top: 40px;
+  padding: 12px 24px;
+
+  color: var(--white);
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  background-color: var(--basic);
+}
+
+.video-section {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.video-headline {
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.video-caption {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
