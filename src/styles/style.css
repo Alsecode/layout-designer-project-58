@@ -57,7 +57,7 @@ h3 {
   max-width: 1110px;
 }
 
-.header-section {
+.section {
   position: relative;
 
   display: flex;
@@ -65,7 +65,7 @@ h3 {
   padding-bottom: 100px;
 }
 
-.header-section::before {
+.section::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,6 +87,7 @@ h3 {
   position: relative;
 
   padding-top: 100px;
+  padding-bottom: 180px;
 }
 
 .main-picture {
@@ -107,13 +108,16 @@ h3 {
 
 .columns {
   display: flex;
-  padding-top: 165px;
 
   column-gap: 30px;
 }
 
 .columns > * {
   flex: 1;
+}
+
+.text-section {
+  margin: 0;
 }
 
 .button-1 {
@@ -173,6 +177,7 @@ h3 {
 
   margin-top: -100px;
   padding-top: 200px;
+  padding-bottom: 100px;
 
   background-color: var(--basic-dark);
 }
@@ -227,4 +232,57 @@ h3 {
 
 .card:hover h3 {
   color: var(--white);
+}
+
+#ikea-effect {
+  padding: 100px 0;
+}
+
+.section-headline {
+  display: flex;
+}
+
+.cognitive-distortions {
+  margin: 0;
+
+  color: var(--translucent-black);
+  font-size: 24px;
+  font-family: Neucha, sans-serif;
+  line-height: 29px;
+}
+
+.effect-ikea-picture {
+  margin-right: 30px;
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+.distortion-description {
+  margin-top: 30px;
+
+  font-weight: 400;
+  font-size: 34px;
+  font-family: Neucha, sans-serif;
+  line-height: 41px;
+}
+
+.how-it-manifests {
+  box-sizing: border-box;
+
+  width: 100%;
+
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
+}
+
+.how-it-manifests h4 {
+  margin: 5px 0 5px 10px;
 }
