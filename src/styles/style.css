@@ -36,6 +36,7 @@ h2,
 h3 {
   margin: 0;
 
+  color: var(--basic);
   font-weight: 400;
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
@@ -102,6 +103,10 @@ h3 {
   color: var(--basic);
 }
 
+.black {
+  color: var(--dark);
+}
+
 .white {
   color: var(--white);
 }
@@ -117,7 +122,7 @@ h3 {
 }
 
 .text-section {
-  margin: 0;
+  margin-top: 0;
 }
 
 .button-1 {
@@ -267,6 +272,8 @@ h3 {
 }
 
 .how-it-manifests {
+  position: relative;
+
   box-sizing: border-box;
 
   width: 100%;
@@ -285,4 +292,46 @@ h3 {
 
 .how-it-manifests h4 {
   margin: 5px 0 5px 10px;
+}
+
+#premature-optimization {
+  padding: 100px 0;
+}
+
+.premature-optimization-picture {
+  z-index: 2;
+
+  margin: 0;
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.translucent-white {
+  color: var(--translucent-white);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.brown {
+  color: var(--brown);
+}
+
+#distortion-of-novelty {
+  padding: 100px 0;
+}
+
+.distortion-of-novelty-picture {
+  margin-right: 30px;
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
